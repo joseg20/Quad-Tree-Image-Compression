@@ -59,7 +59,7 @@ int main(int argc, char **argv)
                             cont_temp++;
 
                         }else {
-                            ArrayImage[i][j] = 255;  // If the original dimensions are exceeded, fill the excess areas with white pixels.
+                            ArrayImage[i][j] = 128;  // If the original dimensions are exceeded, fill the excess areas with white pixels.
                         }
                     }
                 }

@@ -5,8 +5,14 @@ Quad-Tree image compression algorithm implemented in C using stb_image.h and stb
 
 
 ## Screenshots
-![App Screenshot](https://www.dropbox.com/s/56y0k5zkr0po5fv/valp.jpg?dl=0)
-
+Original Image
+![Original Image](https://www.dropbox.com/s/56y0k5zkr0po5fv/valp.jpg?raw=1)
+\
+Out Image(Quadtree's Level = 11) 371.549 bytes
+![Out Image L11](https://www.dropbox.com/s/9kc89a76qjh8mhm/out_level%20_11.jpg?raw=1)
+\
+Out Image(Quadtree's Level = 9) 266.116 bytes
+![Out Image L9](https://www.dropbox.com/s/7xni7cys4ts7k6g/out.jpg?raw=1)
 
 ## Run Locally
 
@@ -22,27 +28,29 @@ Go to the project directory
   cd my-project
 ```
 
-Install dependencies
+Install gcc
 
 ```bash
-  npm install
+  apt-get install gcc
 ```
 
-Start the server
+Compile the source code
 
 ```bash
-  npm run start
+  gcc src/image_compression.c -lm -o image_compression.exe 
 ```
 
+Run the code
 
+```bash
+  ./image_compression.exe img/my-img.exe required-level
+```
 ## Usage/Examples
 
-```javascript
-import Component from 'my-project'
-
-function App() {
-  return <Component />
-}
+```bash
+  ./image_compression.exe img/valp.jpg 11
+  ./image_compression.exe img/coolcat.jpg 7
+  ./image_compression.exe img/gato.jpg 3
 ```
 
 
@@ -50,7 +58,7 @@ function App() {
 
 Here are some related projects
 
-[Awesome README](https://github.com/matiassingers/awesome-readme)
+[STB Image](https://github.com/nothings/stb)
 
 
 ## Authors
@@ -61,5 +69,6 @@ Here are some related projects
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
 
 
