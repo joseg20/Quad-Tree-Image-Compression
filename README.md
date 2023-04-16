@@ -19,7 +19,7 @@ Out Image(Quadtree's Level = 9) 266.116 bytes
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/joseg20/QuadTree-Image-Compression
 ```
 
 Go to the project directory
